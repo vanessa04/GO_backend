@@ -24,7 +24,7 @@ var article = []Article{
 func GetData(w http.ResponseWriter, r *http.Request) {
                 json.NewEncoder(w).Encode(article)
 }
-
+///Vanessa Was here
 func main() {
                 router := mux.NewRouter()
                 router.HandleFunc("/article", GetData).Methods("GET")
